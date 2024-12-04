@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza Delight - Order</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="pizza.png">
+</head>
+<body>
+    <header>
+        <div class="logo">Pizza Delight</div>
+        <nav class="navbar">
+            <a href="home.html">Home</a>
+            <a href="menu.html">Menu</a>
+            <a href="order.html">Order</a>
+        </nav>
+    </header>
+        <section class="order-form-section">
+            <h2>Order Now</h2>
+            <form class="order-form">
+                <div class="form-group">
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <br>
+                    <div class="form-group">
+                        <label for="address">Address:</label>
+                        <input type="address" id="address" name="address" required>
+                    </div>
+                </div>
+            </form>
+            <form class="pizza">
+                <h3>Please choose a pizza size</h3>
+                <input type="radio"  id="small" name="pizza_size" value="small">
+                <label for="small">Small</label><br>
+                <input type="radio"  id="medium" name="pizza_size" value="medium">
+                <label for="medium">Medium</label><br>
+                <input type="radio"  id="large" name="pizza_size" value="large">
+                <label for="large">Large</label><br>
+                <h3>Please choose a pizza type</h3>
+                <input type="radio"  id="margherita" name="pizza_type" value="margherita">
+                <label for="margherita">Margherita</label><br>
+                <input type="radio"  id="pepperoni" name="pizza_type" value="pepperoni">
+                <label for="pepperoni">Pepperoni</label><br>
+                <input type="radio"  id="veggie" name="pizza_type" value="veggie">
+                <label for="veggie">Veggie</label><br>
+                <br>
+                <button type="submit" class="button">Submit</button>
+            </form>
+        </section>
+    <footer>
+        <p>📞 Call us: 0668211416 | © 2024 Pizza Delight</p>
+    </footer>
+</body>
+</html>

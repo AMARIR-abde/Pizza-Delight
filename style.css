@@ -1,0 +1,189 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: lightyellow;
+    color: black;
+    line-height: 1.5;
+    position: relative;
+    padding-bottom: 60px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: coral;
+    color: black;
+    position: sticky;
+    top: 0;
+}
+.logo{
+    font-size: 24px;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    transition: font-size 1s ease; 
+}
+.logo:hover{
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.navbar a{
+    color: black;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 18px;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+.navbar a:hover{
+    color: blue;
+    transform: scale(2.2);
+}
+
+.hero{
+    background-image: url(https://cdn.pixabay.com/photo/2024/04/23/09/32/ai-generated-8714511_1280.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hero::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.hero-text{
+    position: relative;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: 30px;
+    background-color: rgba(1, 1, 1, 0.263);
+    margin-bottom: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.pizzas{
+    text-align: center;
+    padding: 50px 20px;
+}
+.pizzas h1{
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+.pizzas-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+}
+.pizza-itme{
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    box-shadow: 0 5px 90px rgb(113, 54, 2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.pizza-itme:hover{
+    transform: translate(20px, -10px);
+    box-shadow: 0 5px 90px rgb(245, 116, 2);
+}
+.pizza-image{
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+.pizza-itme h2{
+    font-size: 28px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.price{
+    font-size: 40px;
+    color: #b300ff;
+    margin-top: 35px;
+    font-weight: bold;
+}
+.order-form-section{
+    padding: 50px 20px;
+    background-color: #f0f0f0;
+}
+.order-form-section h2{
+    text-align: center;
+    font-size: 30px;
+    font-family: cursive;
+    margin-bottom: 20px;
+}
+.order-form{
+    max-width: 60vh;
+    margin: 10px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 50px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.361);
+}
+.form-group label{
+    display: block;
+    font-size: 18px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.form-group input {
+    border: 1px solid gray;
+    border-radius: 5px;
+    padding: 8px;
+    width: 100%;
+    box-sizing: border-box;
+}
+.pizza{
+    padding: 50px 20px;
+    text-align: center;
+}
+.pizza h3{
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 20px 10px;
+}
+.pizza label{
+    display: inline-block;
+    font-size: 16px;
+    font-family: monospace;
+    align-items: center;
+    gap: 15px;
+}
+.button{
+    width: 20%;
+    padding: 12px;
+    background-color: #ff9900cf;
+    color: #ffffff;
+    border: none;
+    border-radius: 25px;
+    font-size: 18px;
+    cursor: pointer;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+.button:hover {
+    background-color: #6b4306;
+    transform: scale(1.05);
+}
+footer {
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    padding: 15px 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    font-size: 16px;
+    font-style: italic;
+    font-variant: small-caps;
+}  
+
